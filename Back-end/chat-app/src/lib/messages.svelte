@@ -43,7 +43,7 @@
     <div class="msg">
       <img
         class="avatar"
-        src={`https://avatars.dicebear.com/api/identicon/${message.expand?.user?.username}.svg`}
+        src={`https://avatars.dicebear.com/api/open-peeps/${message.expand?.user?.username}.svg`}
         alt="avatar"
         width="40px"
       />
