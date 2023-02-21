@@ -4,7 +4,7 @@
   import { currentUser } from './lib/pocketbase';
 </script>
 
-<h1>Chat Bot</h1>
+<h1>vhat Bot</h1>
 
 <Login />
 
