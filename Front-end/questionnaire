@@ -43,7 +43,7 @@
     <label for="age">What age range would you like your therapist to be in?</label></br>
     <input type="radio" id="age-younger" name="age" value="younger">
     <label for="age-younger">Younger than 40</label>
-    type="radio" id="age-middle" name="age" value="middle"&gt;
+    <input type="radio" id="age-middle" name="age" value="middle">
     <label for="age-middle">Between 40 and 60</label>
     <input type="radio" id="age-older" name="age" value="older">
     <label for="age-older">Older than 60</label><br>
