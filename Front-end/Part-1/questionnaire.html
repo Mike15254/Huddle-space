@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Therapy Preferences Questionnaire</title>
+</head>
+<body>
+  <h1>Therapy Preferences Questionnaire</h1>
+
+  <form>
+    <h2>Tell us about your therapy preferences</h2>
+    <label for="problem">What problem are you seeking help with?</label>
+    <input type="text" id="problem" name="problem"><br>
+
+    <label for="modality">What type of therapy modality do you prefer?</label></br>
+    <select id="modality" name="modality">
+      <option value="cognitive-behavioral-therapy">Cognitive Behavioral Therapy</option>
+      <option value="psychodynamic-therapy">Psychodynamic Therapy</option>
+      <option value="humanistic-therapy">Humanistic Therapy</option>
+      <option value="integrative-therapy">Integrative Therapy</option>
+    </select><br>
+
+    <label for="frequency">How often would you like to have therapy sessions?</label>
+    </br>
+    <select id="frequency" name="frequency">
+      <option value="once-a-week">Once a week</option>
+      <option value="twice-a-week">Twice a week</option>
+      <option value="once-every-two-weeks">Once every two weeks</option>
+      <option value="once-a-month">Once a month</option>
+    </select><br>
+
+    <label for="duration">How long would you like each therapy session to be?</label>
+    </br>
+    <input type="number" id="duration" name="duration" min="30" max="120" step="5"> minutes<br>
+
+    <label for="gender">What gender would you like your therapist to be?</label>
+    </br>
+    <input type="radio" id="gender-female" name="gender" value="female">
+    <label for="gender-female">Female</label>
+    <input type="radio" id="gender-male" name="gender" value="male">
+    <label for="gender-male">Male</label><br>
+
+    <label for="age">What age range would you like your therapist to be in?</label></br>
+    <input type="radio" id="age-younger" name="age" value="younger">
+    <label for="age-younger">Younger than 40</label>
+    <input type="radio" id="age-middle" name="age" value="middle">
+    <label for="age-middle">Between 40 and 60</label>
+    <input type="radio" id="age-older" name="age" value="older">
+    <label for="age-older">Older than 60</label><br>
+
+    <input type="submit" value="Submit">
+        </br>
+        </input>
+  </form>
+  </body>
+  </html>
+
+  <script>
+    const form = document.querySelector('form');
+</script>
+    form.addEventListener('submit', (event) =&gt; {
+      event.preventDefault()
+      const problem = document.querySelector('#problem').value;
+      const modality = document.querySelector('#modality').value;
+      const frequency = document.querySelector('#frequency').value;
+      const duration = document.querySelector('#duration').value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const age = document.querySelector('input[name="age"]:checked').value;
+
+      const preferences = {
+        problem,
+        modality,
+        frequency,
+        duration,
+        gender,
+        age
+      };
+     </input>
+console.log(preferences);
