@@ -1,61 +1,79 @@
 <body>
 	<div>
-        <h1>Tuzungumze</h1>
+		<h1>Tuzungumze</h1>
 		<div class="wave" />
 		<div class="wave" />
 		<div class="wave" />
-        <div>
-            <svg
-                role="img"
-                aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00"
-                class="smiley"
-                viewBox="0 0 128 128"
-                width="128px"
-                height="128px"
-            >
-                <defs>
-                    <clipPath id="smiley-eyes">
-                        <circle
-                            class="smiley__eye1"
-                            cx="64"
-                            cy="64"
-                            r="8"
-                            transform="rotate(-40,64,64) translate(0,-56)"
-                        />
-                        <circle
-                            class="smiley__eye2"
-                            cx="64"
-                            cy="64"
-                            r="8"
-                            transform="rotate(40,64,64) translate(0,-56)"
-                        />
-                    </clipPath>
-                    <linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#000" />
-                        <stop offset="100%" stop-color="#fff" />
-                    </linearGradient>
-                    <mask id="smiley-mask">
-                        <rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
-                    </mask>
-                </defs>
-                <g stroke-linecap="round" stroke-width="12" stroke-dasharray="175.93 351.86">
-                    <g>
-                        <rect fill="hsl(193,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
-                        <g fill="none" stroke="hsl(193,90%,50%)">
-                            <circle class="smiley__mouth1" cx="64" cy="64" r="56" transform="rotate(180,64,64)" />
-                            <circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
-                        </g>
-                    </g>
-                    <g mask="url(#smiley-mask)">
-                        <rect fill="hsl(223,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
-                        <g fill="none" stroke="hsl(223,90%,50%)">
-                            <circle class="smiley__mouth1" cx="64" cy="64" r="56" transform="rotate(180,64,64)" />
-                            <circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
-                        </g>
-                    </g>
-                </g>
-            </svg>
-        </div>
+		<div>
+			<div class="trans">
+				<svg
+					role="img"
+					aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00"
+					class="smiley"
+					viewBox="0 0 128 128"
+					width="128px"
+					height="128px"
+				>
+					<defs>
+						<clipPath id="smiley-eyes">
+							<circle
+								class="smiley__eye1"
+								cx="64"
+								cy="64"
+								r="8"
+								transform="rotate(-40,64,64) translate(0,-56)"
+							/>
+							<circle
+								class="smiley__eye2"
+								cx="64"
+								cy="64"
+								r="8"
+								transform="rotate(40,64,64) translate(0,-56)"
+							/>
+						</clipPath>
+						<linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
+							<stop offset="0%" stop-color="#000" />
+							<stop offset="100%" stop-color="#fff" />
+						</linearGradient>
+						<mask id="smiley-mask">
+							<rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
+						</mask>
+					</defs>
+					<g stroke-linecap="round" stroke-width="12" stroke-dasharray="175.93 351.86">
+						<g>
+							<rect fill="hsl(193,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
+							<g fill="none" stroke="hsl(193,90%,50%)">
+								<circle
+									class="smiley__mouth1"
+									cx="64"
+									cy="64"
+									r="56"
+									transform="rotate(180,64,64)"
+								/>
+								<circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
+							</g>
+						</g>
+						<g mask="url(#smiley-mask)">
+							<rect fill="hsl(223,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
+							<g fill="none" stroke="hsl(223,90%,50%)">
+								<circle
+									class="smiley__mouth1"
+									cx="64"
+									cy="64"
+									r="56"
+									transform="rotate(180,64,64)"
+								/>
+								<circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+
+		</div>
+		<h2>
+			You deserve to be happy
+		</h2>
 	</div>
 </body>
 
@@ -66,19 +84,24 @@
 		overflow: auto;
 		background: linear-gradient(
 			315deg,
-			rgba(101, 0, 94, 1) 3%,
-			rgba(60, 132, 206, 1) 38%,
-			rgba(48, 238, 226, 1) 68%,
-			rgba(255, 25, 25, 1) 98%
+			rgb(247, 248, 247) 3%,
+			rgb(248, 248, 248) 68%,
+			rgb(199, 192, 192) 98%
 		);
 		animation: gradient 15s ease infinite;
-		background-size: 400% 400%;
+		background-size: 100% 100%;
 		background-attachment: fixed;
 	}
 
+	h1,
+	h2 {
+		align-items: center;
+		padding: 20px;
+		text-align: center;
+	}
 	.smiley {
-		width: 8em;
-		height: 8em;
+		width: 4em;
+		height: 4em;
 	}
 	.smiley__eye1,
 	.smiley__eye2,
@@ -203,12 +226,12 @@
 	}
 
 	.wave {
-		background: rgb(255 255 255 / 25%);
+		background: rgba(17, 161, 218, 0.25);
 		border-radius: 1000% 1000% 0 0;
 		position: fixed;
 		width: 200%;
-		height: 12em;
-		animation: wave 10s -3s linear infinite;
+		height: 6em;
+		animation: wave 12s -3s linear infinite;
 		transform: translate3d(0, 0, 0);
 		opacity: 0.8;
 		bottom: 0;
@@ -248,5 +271,9 @@
 		100% {
 			transform: translateX(1);
 		}
+	}
+
+	.trans {
+		text-align: center;
 	}
 </style>
