@@ -69,11 +69,8 @@
 					</g>
 				</svg>
 			</div>
-
 		</div>
-		<h2>
-			You deserve to be happy
-		</h2>
+		<h2>You deserve to be happy</h2>
 	</div>
 </body>
 
@@ -81,14 +78,8 @@
 	body {
 		margin: auto;
 		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		overflow: auto;
-		background: linear-gradient(
-			315deg,
-			rgb(247, 248, 247) 3%,
-			rgb(248, 248, 248) 68%,
-			rgb(199, 192, 192) 98%
-		);
-		animation: gradient 15s ease infinite;
+		background-color: #36e2f2;
+		background-image: url(../peace.jpeg);
 		background-size: 100% 100%;
 		background-attachment: fixed;
 	}
@@ -231,7 +222,7 @@
 		position: fixed;
 		width: 200%;
 		height: 6em;
-		animation: wave 12s -3s linear infinite;
+		animation: wave 4s -4s linear infinite;
 		transform: translate3d(0, 0, 0);
 		opacity: 0.8;
 		bottom: 0;
