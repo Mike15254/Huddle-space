@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Therapy Preferences Questionnaire</title>
+  <style>
+    tittle{
+      font-size: large;
+      font-family: cursive;
+      opacity: 0;
+    }
+    label{
+      margin: 10px;
+      padding:0%;
+     font-family:  'times new roman';
+     font-style:bold;
+    font-size: x-large;
+  }
+    input{
+      font-size: large;
+          }
+  </style>
 </head>
 <body>
-  <h1>Therapy Preferences Questionnaire</h1>
-
+  <h1> Preferences Questionnaire</h1>
   <form>
     <h2>Tell us about your therapy preferences</h2>
+    <div id="question-container" style="display: none;"></div>
     <label for="problem">What problem are you seeking help with?</label>
     <input type="text" id="problem" name="problem"><br>
 
@@ -57,23 +74,11 @@
 
   <script>
     const form = document.querySelector('form');
-</script>
-    form.addEventListener('submit', (event) =&gt; {
-      event.preventDefault()
-      const problem = document.querySelector('#problem').value;
-      const modality = document.querySelector('#modality').value;
-      const frequency = document.querySelector('#frequency').value;
-      const duration = document.querySelector('#duration').value;
-      const gender = document.querySelector('input[name="gender"]:checked').value;
-      const age = document.querySelector('input[name="age"]:checked').value;
+    const questionContainer = document.getElementById("question-container");
+const questions = document.querySelectorAll(".question");
+const question1Btn = document.getElementById("question1-btn");
+const question2Btn = document.getElementById("question2-btn");
+const question3Btn = document.getElementById("question3-btn");
 
-      const preferences = {
-        problem,
-        modality,
-        frequency,
-        duration,
-        gender,
-        age
-      };
-     </input>
-console.log(preferences);
+</script>
+   

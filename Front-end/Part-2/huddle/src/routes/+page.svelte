@@ -70,7 +70,14 @@
 				</svg>
 			</div>
 		</div>
-		<h2>You deserve to be happy</h2>
+		<h2>You deserve to be happy<br>
+			unastahili furaha.			
+		</h2>
+		<h3> Welcome to TUZUNGUMZE</h3>
+		<div>id = <div id="buttoncontainer">
+		<button>log in</button>
+		<button>sign up</button>
+	</div>
 	</div>
 </body>
 
@@ -78,7 +85,7 @@
 	body {
 		margin: auto;
 		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		background-color: #36e2f2;
+		background-color: #f2d036;
 		background-image: url(../peace.jpeg);
 		background-size: 100% 100%;
 		background-attachment: fixed;
@@ -102,7 +109,7 @@
 	}
 	.smiley__eye1,
 	.smiley__eye2 {
-		transform-origin: 64px 64px;
+		transform-origin: 74px 74px;
 	}
 	.smiley__eye2 {
 		animation-name: eye2;
@@ -113,6 +120,21 @@
 	.smiley__mouth2 {
 		animation-name: mouth2;
 		visibility: hidden;
+	}
+	#buttoncontainer{
+		text-align: center;
+	}
+	button {
+		background-color: rgb(17, 133, 179);
+		background-position: center;
+		color: black;
+		font-size: x-large;
+		font-family: sans-serif;
+		padding: 10px 30px;
+	}
+	
+	h3{
+		text-align: center;
 	}
 
 	/* Dark theme */
