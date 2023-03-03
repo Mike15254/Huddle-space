@@ -85,15 +85,22 @@
 	body {
 		margin: auto;
 		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+<<<<<<< HEAD
 		background-color: #f2d036;
+=======
+>>>>>>> bf1c068b993b4a5ab7c98d8f3a25fb382c64ba85
 		background-image: url(../peace.jpeg);
+		background-color: rgb(247, 70, 1);
 		background-size: 100% 100%;
+		z-index: -2;
+		opacity: .5;
 		background-attachment: fixed;
 	}
 
 	h1,
 	h2 {
 		align-items: center;
+		color: #ffffff;
 		padding: 20px;
 		text-align: center;
 	}
@@ -239,12 +246,12 @@
 	}
 
 	.wave {
-		background: rgba(17, 161, 218, 0.25);
+		background: rgb(255 255 255 / 25%);
 		border-radius: 1000% 1000% 0 0;
 		position: fixed;
 		width: 200%;
-		height: 6em;
-		animation: wave 4s -4s linear infinite;
+		height: 10em;
+		animation: wave 10s -3s linear infinite;
 		transform: translate3d(0, 0, 0);
 		opacity: 0.8;
 		bottom: 0;
