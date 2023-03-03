@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <body>
 	<div>
 		<h1>Tuzungumze</h1>
@@ -43,53 +44,241 @@
 						<g>
 							<rect fill="hsl(193,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
 							<g fill="none" stroke="hsl(193,90%,50%)">
+=======
+<main>
+	<div class="content-container">
+		<nav>
+			<div class="nav-space0">
+				<a href="/">
+					<svg
+						role="img"
+						aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00"
+						class="smiley"
+						viewBox="0 0 128 128"
+						width="128px"
+						height="128px"
+					>
+						<defs>
+							<clipPath id="smiley-eyes">
+>>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 								<circle
-									class="smiley__mouth1"
+									class="smiley__eye1"
 									cx="64"
 									cy="64"
-									r="56"
-									transform="rotate(180,64,64)"
+									r="8"
+									transform="rotate(-40,64,64) translate(0,-56)"
 								/>
-								<circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
-							</g>
-						</g>
-						<g mask="url(#smiley-mask)">
-							<rect fill="hsl(223,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
-							<g fill="none" stroke="hsl(223,90%,50%)">
 								<circle
-									class="smiley__mouth1"
+									class="smiley__eye2"
 									cx="64"
 									cy="64"
-									r="56"
-									transform="rotate(180,64,64)"
+									r="8"
+									transform="rotate(40,64,64) translate(0,-56)"
 								/>
-								<circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
+							</clipPath>
+							<linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
+								<stop offset="0%" stop-color="#000" />
+								<stop offset="100%" stop-color="#fff" />
+							</linearGradient>
+							<mask id="smiley-mask">
+								<rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
+							</mask>
+						</defs>
+						<g stroke-linecap="round" stroke-width="12" stroke-dasharray="175.93 351.86">
+							<g>
+								<rect
+									fill="hsl(193,90%,50%)"
+									width="128"
+									height="64"
+									clip-path="url(#smiley-eyes)"
+								/>
+								<g fill="none" stroke="hsl(193,90%,50%)">
+									<circle
+										class="smiley__mouth1"
+										cx="64"
+										cy="64"
+										r="56"
+										transform="rotate(180,64,64)"
+									/>
+									<circle
+										class="smiley__mouth2"
+										cx="64"
+										cy="64"
+										r="56"
+										transform="rotate(0,64,64)"
+									/>
+								</g>
+							</g>
+							<g mask="url(#smiley-mask)">
+								<rect
+									fill="hsl(223,90%,50%)"
+									width="128"
+									height="64"
+									clip-path="url(#smiley-eyes)"
+								/>
+								<g fill="none" stroke="hsl(223,90%,50%)">
+									<circle
+										class="smiley__mouth1"
+										cx="64"
+										cy="64"
+										r="56"
+										transform="rotate(180,64,64)"
+									/>
+									<circle
+										class="smiley__mouth2"
+										cx="64"
+										cy="64"
+										r="56"
+										transform="rotate(0,64,64)"
+									/>
+								</g>
 							</g>
 						</g>
-					</g>
-				</svg>
+					</svg>
+				</a>
 			</div>
-		</div>
-		<h2>You deserve to be happy</h2>
+			<div class="nav-space1">
+				<a href="/" class="style-a1">About</a>
+				<a href="/">FAQ</a>
+				<a href="/">Advice</a>
+			</div>
+			<div class="nav-space2">
+				<a href="/">Login</a>
+				<a href="/">Get Started</a>
+			</div>
+		</nav>
+		<section class="hero-wrapper">
+			<div class="hero">
+				<div class="container">
+					<h1>Tuzungumze</h1>
+					<div class="typewriter">
+						<h3>You deserve to be happy</h3>
+					</div>
+					<a href="/" class="btn" type="button">
+						<span class="btn__text">Get Started</span>
+					</a>
+				</div>
+			</div>
+		</section>
 	</div>
-</body>
+</main>
 
 <style>
-	body {
-		margin: auto;
-		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		background-color: #36e2f2;
-		background-image: url(../peace.jpeg);
-		background-size: 100% 100%;
-		background-attachment: fixed;
+	:root {
+		--hue: 223;
+		--bg: hsl(var(--hue), 90%, 90%);
+		--fg: hsl(var(--hue), 90%, 10%);
+		--trans-dur: 0.3s;
+		font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+	}
+	.content-container {
+		background-size: cover;
+		background-image: linear-gradient(rgba(50, 83, 67, 0.85), rgb(51 83 67 / 85%)),
+			url(../gatYou2.jpeg);
+		width: 100%;
+		height: 100vh;
 	}
 
-	h1,
-	h2 {
+	.hero-wrapper {
+		text-align: center;
+		display: flex;
+		justify-content: center;
 		align-items: center;
+<<<<<<< HEAD
 		padding: 20px;
+=======
+		position: relative;
+		height: 70vh;
+	}
+
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
+	a {
+		text-decoration: none;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	a:hover {
+		color: crimson;
+	}
+
+	.nav-space0 {
+		padding: 30px;
+	}
+
+	.nav-space1 {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+>>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 		text-align: center;
 	}
+
+	.nav-space1 a {
+		color: rgb(250, 236, 236);
+	}
+
+	.nav-space1 a:hover {
+		color: #181616;
+		transition: 250ms;
+	}
+
+	.nav-space1 a {
+		padding: 10px;
+	}
+
+	.nav-space2 {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	.nav-space2 a {
+		padding: 10px;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.7rem 2rem;
+		border: 0.2rem solid rgba(50, 83, 67, 0.85);
+		font-size: 20px;
+		border-radius: 2rem;
+		background-color: rgba(34, 141, 89, 0.85);
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	.btn:hover {
+		color: #ffffff;
+		background-color: rgba(14, 226, 120, 0.85);
+		transition-duration: 0.2s;
+	}
+
+	.btn__text {
+		font-size: 30px;
+	}
+
+	.hero-wrapper .hero {
+		color: #ffffff;
+	}
+
+	.hero-wrapper .hero h1 {
+		margin: auto;
+		text-align: center;
+		font-size: 70px;
+		letter-spacing: 9px;
+	}
+
+	/** Smiley face */
 	.smiley {
 		width: 4em;
 		height: 4em;
@@ -98,7 +287,7 @@
 	.smiley__eye2,
 	.smiley__mouth1,
 	.smiley__mouth2 {
-		animation: eye1 3s ease-in-out infinite;
+		animation: eye1 4s ease-in-out infinite;
 	}
 	.smiley__eye1,
 	.smiley__eye2 {
@@ -203,19 +392,16 @@
 			stroke-dashoffset: -351.86;
 		}
 	}
-
-	@keyframes gradient {
-		0% {
-			background-position: 0% 0%;
-		}
-		50% {
-			background-position: 100% 100%;
-		}
-		100% {
-			background-position: 0% 0%;
-		}
+	.typewriter {
+		color: #fff;
+		overflow: hidden; /* Ensures the content is not revealed until the animation */
+		white-space: nowrap; /* Keeps the content on a single line */
+		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		letter-spacing: 0.1em; /* Adjust as needed */
+		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 	}
 
+<<<<<<< HEAD
 	.wave {
 		background: rgba(17, 161, 218, 0.25);
 		border-radius: 1000% 1000% 0 0;
@@ -245,26 +431,15 @@
 	@keyframes wave {
 		2% {
 			transform: translateX(1);
+=======
+	/* The typing effect */
+	@keyframes typing {
+		from {
+			width: 5%;
+>>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 		}
-
-		25% {
-			transform: translateX(-25%);
+		to {
+			width: 100%;
 		}
-
-		50% {
-			transform: translateX(-50%);
-		}
-
-		75% {
-			transform: translateX(-25%);
-		}
-
-		100% {
-			transform: translateX(1);
-		}
-	}
-
-	.trans {
-		text-align: center;
 	}
 </style>
