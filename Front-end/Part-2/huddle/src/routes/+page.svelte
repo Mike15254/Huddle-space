@@ -1,50 +1,3 @@
-<<<<<<< HEAD
-<body>
-	<div>
-		<h1>Tuzungumze</h1>
-		<div class="wave" />
-		<div class="wave" />
-		<div class="wave" />
-		<div>
-			<div class="trans">
-				<svg
-					role="img"
-					aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00"
-					class="smiley"
-					viewBox="0 0 128 128"
-					width="128px"
-					height="128px"
-				>
-					<defs>
-						<clipPath id="smiley-eyes">
-							<circle
-								class="smiley__eye1"
-								cx="64"
-								cy="64"
-								r="8"
-								transform="rotate(-40,64,64) translate(0,-56)"
-							/>
-							<circle
-								class="smiley__eye2"
-								cx="64"
-								cy="64"
-								r="8"
-								transform="rotate(40,64,64) translate(0,-56)"
-							/>
-						</clipPath>
-						<linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
-							<stop offset="0%" stop-color="#000" />
-							<stop offset="100%" stop-color="#fff" />
-						</linearGradient>
-						<mask id="smiley-mask">
-							<rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
-						</mask>
-					</defs>
-					<g stroke-linecap="round" stroke-width="12" stroke-dasharray="175.93 351.86">
-						<g>
-							<rect fill="hsl(193,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
-							<g fill="none" stroke="hsl(193,90%,50%)">
-=======
 <main>
 	<div class="content-container">
 		<nav>
@@ -60,7 +13,6 @@
 					>
 						<defs>
 							<clipPath id="smiley-eyes">
->>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 								<circle
 									class="smiley__eye1"
 									cx="64"
@@ -138,8 +90,8 @@
 				</a>
 			</div>
 			<div class="nav-space1">
-				<a href="/" class="style-a1">About</a>
-				<a href="/">FAQ</a>
+				<a href="/about">About</a>
+				<a href="/FAQ">FAQ</a>
 				<a href="/">Advice</a>
 			</div>
 			<div class="nav-space2">
@@ -184,9 +136,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-<<<<<<< HEAD
-		padding: 20px;
-=======
 		position: relative;
 		height: 70vh;
 	}
@@ -218,7 +167,6 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		font-size: 20px;
->>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 		text-align: center;
 	}
 
@@ -401,42 +349,10 @@
 		animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 	}
 
-<<<<<<< HEAD
-	.wave {
-		background: rgba(17, 161, 218, 0.25);
-		border-radius: 1000% 1000% 0 0;
-		position: fixed;
-		width: 200%;
-		height: 6em;
-		animation: wave 4s -4s linear infinite;
-		transform: translate3d(0, 0, 0);
-		opacity: 0.8;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-	}
-
-	.wave:nth-of-type(2) {
-		bottom: -1.24em;
-		animation: wave 18s linear reverse infinite;
-		opacity: 0.8;
-	}
-
-	.wave:nth-of-type(3) {
-		bottom: -2.4em;
-		animation: wave 20s -1s reverse infinite;
-		opacity: 0.9;
-	}
-
-	@keyframes wave {
-		2% {
-			transform: translateX(1);
-=======
 	/* The typing effect */
 	@keyframes typing {
 		from {
 			width: 5%;
->>>>>>> 6c2261762793dec4dfc8647ad67e2059c1c428d0
 		}
 		to {
 			width: 100%;
