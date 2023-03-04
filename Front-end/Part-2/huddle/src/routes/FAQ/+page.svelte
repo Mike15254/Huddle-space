@@ -1,0 +1,72 @@
+<div id="title">
+	<h2>Frequently asked questions</h2>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+	><path
+		fill="#fffdd0"
+		fill-opacity="1"
+		d="M0,192L60,192C120,192,240,192,360,160C480,128,600,64,720,64C840,64,960,128,1080,154.7C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+	/></svg
+>
+<center>
+	<div id="questions">
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+			<p>
+				We change the way student's approach their mental health and help them tackle life’s
+				challenges by providing accessiblity.............
+			</p>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+		<div id="q1">
+			<h3>What is Tuzungumze?</h3>
+		</div>
+	</div>
+</center>
+
+<style>
+	#title {
+		text-align: center;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: -0.02em;
+		font-weight: 100;
+		background-color: #fffdd0;
+		height: 10vh;
+		padding: 30px;
+	}
+	#questions {
+		display: block;
+		background-color: #fff;
+		width: 100vh;
+	}
+	#q1 {
+		border: 1px solid;
+		height: 20vh;
+		border-bottom-style: none;
+		border-right-style: none;
+		border-left-style: none;
+	}
+	#q1 h3 {
+		text-align: left;
+		font-size: 25px;
+	}
+	#q1 p {
+		text-align: left;
+		font-size: 20px;
+	}
+</style>
