@@ -33,7 +33,7 @@
 					<h3>Edina Kwamboka</h3>
 					<p>
 						Marie wears a lot of hats. She is our documentation lead, customer support maestra,
-						editor, and community manager.<br /><a href="/">@mariemosley</a>
+						editor, and community manager.<br /><a href="/">@kwambox</a>
 					</p>
 				</div>
 			</li>
