@@ -92,7 +92,7 @@
 			<div class="nav-space1">
 				<a href="/about">About</a>
 				<a href="/FAQ">FAQ</a>
-				<a href="/">Advice</a>
+				<a href="/Advice">Advice</a>
 			</div>
 			<div class="nav-space2">
 				<a href="/">Login</a>
