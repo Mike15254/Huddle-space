@@ -9,7 +9,7 @@
 					<h3>Michael Muia</h3>
 					<p>
 						Chris is a front-end developer and designer. He writes a bunch of HTML, CSS, and
-						JavaScript and shakes the pom-poms for CodePen.<br /><a href="/">@chriscoyier</a>
+						JavaScript and shakes the pom-poms for CodePen.<br /><a href="/">@mikemax</a>
 					</p>
 				</div>
 			</li>
