@@ -21,7 +21,7 @@
 					<h3>Dennis Muriuki</h3>
 					<p>
 						Alex is a full stack developer. Alex does JavaScript development for CodePen, both front
-						end and back, and just about everything else.<br /><a href="/">@quezo</a>
+						end and back, and just about everything else.<br /><a href="/">@Theflakes</a>
 					</p>
 				</div>
 			</li>
