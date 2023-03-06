@@ -95,7 +95,7 @@
 				<a href="/Advice">Advice</a>
 			</div>
 			<div class="nav-space2">
-				<a href="/">Login</a>
+				<a href="/login">Login</a>
 				<a href="/">Get Started</a>
 			</div>
 		</nav>
