@@ -9,59 +9,7 @@
 
 	// the form functionality
 
-	import { onMount } from 'svelte';
-
-	let circles = [];
-
-	onMount(() => {
-		circles = [...document.querySelectorAll('circle')];
-		update();
-	});
-
-	let currentActive = 1;
-
-	const handleNextClick = () => {
-		currentActive++;
-
-		if (currentActive > circles.length) {
-			currentActive = circles.length;
-		}
-		console.log(currentActive);
-		update();
-	};
-
-	const handlePrevClick = () => {
-		currentActive--;
-
-		if (currentActive < 1) {
-			currentActive = 1;
-		}
-		update();
-	};
-
-	const update = () => {
-		circles.forEach((circle, idx) => {
-			if (idx < currentActive) {
-				circle.classList.add('active');
-			} else {
-				circle.classList.remove('active');
-			}
-		});
-
-		const actives = document.querySelectorAll('.active');
-		const progress = document.getElementById('progress');
-
-		progress.style.width = ((actives.length - 1) / (circles.length - 1)) * 100 + '%';
-
-		if (currentActive === 1) {
-			prev.disabled = false;
-		} else if (currentActive === circles.length) {
-			next.disabled = false;
-		} else {
-			prev.disabled = false;
-			next.disabled = false;
-		}
-	};
+	
 </script>
 
 <div class="loader" style="display: {loading ? 'block' : 'none'}">
@@ -82,8 +30,8 @@
 			<div class="circle">4</div>
 		</div>
 
-		<button class="btn" id="prev" on:click={handlePrevClick}>Prev</button>
-		<button class="btn" id="next" on:click={handleNextClick}>Next</button>
+		<button class="btn" id="prev">Prev</button>
+		<button class="btn" id="next">Next</button>
 	</div>
 </div>
 
