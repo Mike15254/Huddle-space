@@ -207,4 +207,20 @@
 		padding-left: 20px;
 		justify-content: space-around;
 	}
+	.hidden {
+		display: none;
+	}
+	.show-btn {
+		background-color: rgb(85, 146, 85);
+		color: white;
+		font-size: 16px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-right: 30px;
+	}
+	.show-btn:hover {
+		background-color: darkblue;
+	}
 </style>
