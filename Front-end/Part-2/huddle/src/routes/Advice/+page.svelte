@@ -1,3 +1,29 @@
+<script>
+	'use strict';
+
+	const showButton = document.querySelectorAll('.show-btn');
+	const closeButton = document.querySelector('.close-btn');
+	const quotes = document.querySelector('.quotes');
+	const overlay = document.querySelector('.overlay');
+
+	for (let i = 0; i < showButton.length; i++) {
+		showButton[i].adddEventListener('click', actionOpen);
+	}
+
+	const actionOpen = function () {
+		quotes.classList.remove('hidden');
+		overlay.classList.remove('hidden');
+	};
+
+	const actionClose = function () {
+		quotes.classList.add('hidden');
+		overlay.classList.add('hidden');
+	};
+
+	closeButton.addEventListener('click', actionClose);
+	overlay.addEventListener('click', actionClose);
+</script>
+
 <main>
 	<div class="content-container">
 		<section class="hero-wrapper">
@@ -25,40 +51,50 @@
 							help when you need it. Seeking therapy is a sign of strength, not weakness. You are
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
+						<div class="button">
+							<button class="show-btn">Quotes</button>
+							<button class="show-btn">Anything</button>
+							<button class="show-btn">Books</button>
+						</div>
 					</div>
-					<nav class="nav-space1">
-						<blockquote5>
-							"The only way out is through."
-							<cite>- Robert Frost</cite>
-						</blockquote5><br /><br />
-						<blockquote0>
-							"Be the change that you wish to see in the world."
-							<cite>- Mahatma Gandhi</cite>
-						</blockquote0><br /><br />
-						<blockquote1>
-							"It does not matter how slowly you go as long as you do not stop."
-							<cite>- Confucius</cite>
-						</blockquote1><br />
-						<br />
-						<blockquote4>
-							"Life is 10% what happens to us and 90% how we react to it."
-							<cite>- Charles R. Swindoll</cite>
-						</blockquote4><br /><br />
-						<blockquote2>
-							"We cannot change the cards we are dealt, just how we play the hand."
-							<cite>- Randy Pausch</cite>
-						</blockquote2><br /><br />
-						<blockquote3>
-							"What lies behind us and what lies before us are tiny matters compared to what lies
-							within us."<br /><br />
-							<cite>- Ralph Waldo Emerson</cite>
-						</blockquote3><br />
-					</nav>
+					<div class="quotes hidden">
+						<div class="close-btn">&times;</div>
+						<nav class="nav-space1">
+							<blockquote5>
+								"The only way out is through."
+								<cite>- Robert Frost</cite>
+							</blockquote5><br /><br />
+							<blockquote0>
+								"Be the change that you wish to see in the world."
+								<cite>- Mahatma Gandhi</cite>
+							</blockquote0><br /><br />
+							<blockquote1>
+								"It does not matter how slowly you go as long as you do not stop."
+								<cite>- Confucius</cite>
+							</blockquote1><br />
+							<br />
+							<blockquote4>
+								"Life is 10% what happens to us and 90% how we react to it."
+								<cite>- Charles R. Swindoll</cite>
+							</blockquote4><br /><br />
+							<blockquote2>
+								"We cannot change the cards we are dealt, just how we play the hand."
+								<cite>- Randy Pausch</cite>
+							</blockquote2><br /><br />
+							<blockquote3>
+								"What lies behind us and what lies before us are tiny matters compared to what lies
+								within us."<br /><br />
+								<cite>- Ralph Waldo Emerson</cite>
+							</blockquote3><br />
+						</nav>
+						<div class="overlay hidden" />
+					</div>
 				</div>
 			</div>
 		</section>
 	</div>
 </main>
+
 <style>
 	blockquote0 {
 		color: rgba(234, 240, 236, 0.85);
@@ -159,7 +195,7 @@
 	}
 
 	h3 {
-		text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+		text-shadow: 1px 1px 1px rgb(243, 247, 247), 2px 2px 1px rgb(27, 22, 22);
 	}
 	p {
 		font-size: 0.7rem;
@@ -171,5 +207,21 @@
 		padding: 10px;
 		padding-left: 20px;
 		justify-content: space-around;
+	}
+	.hidden {
+		display: none;
+	}
+	.show-btn {
+		background-color: rgb(85, 146, 85);
+		color: white;
+		font-size: 16px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-right: 30px;
+	}
+	.show-btn:hover {
+		background-color: darkblue;
 	}
 </style>
