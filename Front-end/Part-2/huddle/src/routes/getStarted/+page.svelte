@@ -1,5 +1,7 @@
 <script>
+	import img from '$lib/image/wave.svg';
 	// for the loading animation before the from
+	import QuestionareForm from '$lib/components/questionareForm.svelte';
 	let loading = true;
 	const animationDuration = 3000;
 
@@ -8,10 +10,11 @@
 	}, animationDuration);
 
 	// the form functionality
-
-	
 </script>
 
+<div class="herosection">
+	<img src={img} alt="svg" />
+</div>
 <div class="loader" style="display: {loading ? 'block' : 'none'}">
 	<h1>LOADING</h1>
 	<span />
@@ -20,24 +23,22 @@
 </div>
 
 <div class="greeting" style="display: {loading ? 'none' : 'block'}">
-	<div class="container">
-		<h1>Welcome here</h1>
-		<div class="progress-container">
-			<div class="progress" id="progress" />
-			<div class="circle active">1</div>
-			<div class="circle">2</div>
-			<div class="circle">3</div>
-			<div class="circle">4</div>
-		</div>
-
-		<button class="btn" id="prev">Prev</button>
-		<button class="btn" id="next">Next</button>
-	</div>
+	<QuestionareForm />
 </div>
 
 <style>
 	* {
 		box-sizing: border-box;
+	}
+
+	.herosection {
+		display: flex;
+		height: 80%;
+	}
+
+	img {
+		height: 80%;
+		width: 100%;
 	}
 
 	:root {
@@ -110,85 +111,5 @@
 	h1 {
 		color: #212121;
 		margin-bottom: 90px;
-	}
-
-	.container {
-		text-align: center;
-	}
-
-	.progress-container {
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		margin-bottom: 30px;
-		max-width: 100%;
-		width: 350px;
-	}
-
-	.progress-container::before {
-		content: '';
-		background-color: var(--line-border-empty);
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		height: 4px;
-		width: 100%;
-		z-index: -1;
-		transform: 0.4s ease;
-	}
-
-	.progress {
-		display: flex;
-		background-color: var(--line-border-fill);
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		height: 4px;
-		width: 0%;
-		z-index: -1;
-		transform: 0.4s ease;
-	}
-
-	.circle {
-		background-color: #ffffff;
-		color: #999;
-		border-radius: 50%;
-		height: 50px;
-		width: 50px;
-		border: 3px solid #b2bec3;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: 0.4s ease;
-	}
-
-	.circle.active {
-		border-color: var(--line-border-fill);
-	}
-
-	.btn {
-		background-color: var(--line-border-fill);
-		color: #ffffff;
-		border-radius: 6px;
-		border: 0;
-		cursor: pointer;
-		padding: 8px 30px;
-		margin: 5px;
-		font-size: 14px;
-	}
-
-	.btn:focus {
-		outline: 0;
-	}
-
-	.btn:active {
-		transform: scale(0.97);
-	}
-
-	.btn:disabled {
-		background-color: var(--line-border-empty);
-		cursor: not-allowed;
 	}
 </style>
