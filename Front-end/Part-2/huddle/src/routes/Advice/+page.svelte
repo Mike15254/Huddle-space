@@ -1,3 +1,28 @@
+<script>
+	'use strict';
+
+	const showButton = document.querySelectorAll('.show-btn');
+	const closeButton = document.querySelector('.close-btn');
+	const quotes = document.querySelector('.quotes');
+	const overlay = document.querySelector('.overlay');
+
+	for (let i = 0; i < showButton.length; i++) {
+		showButton[i].adddEventListener('click', actionOpen);
+	}
+
+	const actionOpen = function () {
+		quotes.classList.remove('hidden');
+		overlay.classList.remove('hidden');
+	};
+
+	const actionClose = function () {
+		quotes.classList.add('hidden');
+		overlay.classList.add('hidden');
+	};
+
+	closeButton.addEventListener('click', actionClose);
+	overlay.addEventListener('click', actionClose);
+</script>
 <main>
 	<div class="content-container">
 		<section class="hero-wrapper">
@@ -26,6 +51,15 @@
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
 					</div>
+					<div class="button">
+						<button class="show-btn">Quotes</button>
+							<button class="show-btn">Anything</button>
+							<button class="show-btn">Books</button>
+						</div>
+					</div>
+					<div class="quotes hidden">
+						<div class="close-btn">&times;</div>
+						
 					<nav class="nav-space1">
 						<blockquote5>
 							"The only way out is through."
@@ -54,6 +88,7 @@
 							<cite>- Ralph Waldo Emerson</cite>
 						</blockquote3><br />
 					</nav>
+						<div class="overlay hidden"></div>
 				</div>
 			</div>
 		</section>
