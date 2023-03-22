@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
+
+
+
 	<title>Questions About Africa</title>
 	<style>
         #title{
@@ -122,5 +122,5 @@
 		});
 	</script>
 </body>
-</html>
+
 
