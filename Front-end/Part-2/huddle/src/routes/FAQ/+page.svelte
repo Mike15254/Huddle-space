@@ -42,7 +42,7 @@
 			display: block;
 		}
 	</style>
-</head>
+
 <body>
     <div id="title">
         <h2>Frequently asked questions</h2>
