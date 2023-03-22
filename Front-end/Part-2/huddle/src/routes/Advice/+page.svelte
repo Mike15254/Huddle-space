@@ -7,7 +7,7 @@
 	const overlay = document.querySelector('.overlay');
 
 	for (let i = 0; i < showButton.length; i++) {
-		showButton[i].adddEventListener('click', actionOpen);
+		showButton[i].addEventListener('click', actionOpen);
 	}
 
 	const actionOpen = function () {
