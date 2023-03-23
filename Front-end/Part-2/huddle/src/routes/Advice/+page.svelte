@@ -1,36 +1,20 @@
 <script>
-	'use strict';
-
-	const showButton = document.querySelectorAll('.show-btn');
-	const closeButton = document.querySelector('.close-btn');
-	const quotes = document.querySelector('.quotes');
-	const overlay = document.querySelector('.overlay');
-
-	for (let i = 0; i < showButton.length; i++) {
-		showButton[i].adddEventListener('click', actionOpen);
-	}
-
-	const actionOpen = function () {
-		quotes.classList.remove('hidden');
-		overlay.classList.remove('hidden');
-	};
-
-	const actionClose = function () {
-		quotes.classList.add('hidden');
-		overlay.classList.add('hidden');
-	};
-
-	closeButton.addEventListener('click', actionClose);
-	overlay.addEventListener('click', actionClose);
+	import myImage from '/src/routes/Advice/therapy.jpg';
+	import firstImage from '/src/routes/Advice/first.avif';
+	import secondImage from '/src/routes/Advice/second.avif';
+	import thirdImage from '/src/routes/Advice/third.avif';
+	import forthImage from '/src/routes/Advice/forth.avif';
+	import fifthImage from '/src/routes/Advice/fifth.jpeg';
+	import sixImage from '/src/routes/Advice/first.jpg';
 </script>
 
 <main>
-	<div class="content-container">
+	<div class="content-container" style="background-image: url('{forthImage}')">
 		<section class="hero-wrapper">
 			<div class="hero">
 				<div class="container">
-					<h3>What advice is Tuzungumze recommending as you are looking for a therapist?</h3>
 					<div class="typewritter">
+						<h3>What advice is Tuzungumze recommending as you are looking for a therapist?</h3>
 						<p>
 							Tuzungumze is a Dekut based Student online Therapy platform: How it Can Help? Are you
 							a student in Dekut who is feeling overwhelmed, anxious, or stressed out? If so,
@@ -51,44 +35,98 @@
 							help when you need it. Seeking therapy is a sign of strength, not weakness. You are
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
-						<div class="button">
-							<button class="show-btn">Quotes</button>
-							<button class="show-btn">Anything</button>
-							<button class="show-btn">Books</button>
-						</div>
 					</div>
-					<div class="quotes hidden">
-						<div class="close-btn">&times;</div>
-						<nav class="nav-space1">
-							<blockquote5>
-								"The only way out is through."
-								<cite>- Robert Frost</cite>
-							</blockquote5><br /><br />
-							<blockquote0>
-								"Be the change that you wish to see in the world."
-								<cite>- Mahatma Gandhi</cite>
-							</blockquote0><br /><br />
-							<blockquote1>
-								"It does not matter how slowly you go as long as you do not stop."
-								<cite>- Confucius</cite>
-							</blockquote1><br />
-							<br />
-							<blockquote4>
-								"Life is 10% what happens to us and 90% how we react to it."
-								<cite>- Charles R. Swindoll</cite>
-							</blockquote4><br /><br />
-							<blockquote2>
-								"We cannot change the cards we are dealt, just how we play the hand."
-								<cite>- Randy Pausch</cite>
-							</blockquote2><br /><br />
-							<blockquote3>
-								"What lies behind us and what lies before us are tiny matters compared to what lies
-								within us."<br /><br />
-								<cite>- Ralph Waldo Emerson</cite>
-							</blockquote3><br />
-						</nav>
-						<div class="overlay hidden" />
+					<div class="quotes" style="background-image: url('{firstImage}')">
+						<p>"The only way out is through." - Robert Frost</p>
+						<p>"Be the change that you wish to see in the world." - Mahatma Gandhi</p>
+						<p>"It does not matter how slowly you go as long as you do not stop." - Confucius</p>
+						<p>
+							"Life is 10% what happens to us and 90% how we react to it." - Charles R. Swindoll
+						</p>
+						<p>
+							"We cannot change the cards we are dealt, just how we play the hand." - Randy Pausch
+						</p>
 					</div>
+					<div class="books" style="background-image: url('{myImage}')">
+						<!-- <img src={myImage} alt="my image" class="image" /> -->
+						<p class="one">1. Mindset: The New Psychology of Success by Carol S. Dweck</p>
+						<p class="one">2. Attachment Theory in Practice by Sue Johnson</p>
+						<p class="one">3. Grit: The Power of Passion and Perseverance by Angela Duckworth</p>
+						<p class="one">
+							4. The Gift of Therapy: An Open Letter to a New Generation of Therapists and their
+							Patients by Irvan Yalom
+						</p>
+						<p class="one">5. The Structure of Scientific Revolutions by Thomas Kuhn</p>
+					</div>
+					<div class="extra" style="background: url('{fifthImage}')" />
+					<h2>Academic Pressure</h2>
+					<p>
+						Remember that you are capable of overcoming any challenge that comes your way, and every
+						small step you take towards your goal is a victory in itself.
+					</p>
+					<p>
+						Stay focused on your long-term goals, but don't forget to celebrate your progress and
+						take care of yourself along the way.
+					</p>
+
+					<h3>Here are some of the ways to cope with academic pressure</h3>
+					<p>
+						Prioritize your time. Determine which tasks are most important or urgent and focus on
+						those first.
+					</p>
+					<p>
+						Take breaks when you need them. Stepping away from your work for a few minutes can help
+						you recharge and come back more focused.
+					</p>
+					<p>
+						Stay connected with friends and family. Having a support network can help you feel more
+						resilient and less alone.
+					</p>
+					<p>
+						Remember that academic success is not the only measure of your worth. You are more than
+						your grades or test scores.
+					</p>
+					<p>
+						Seek professional help if you are struggling with your mental health. Your school may
+						have resources available, such as counseling services or support groups.
+					</p>
+				</div>
+				<div class="social">
+					<h2>Social Isolation</h2>
+					<p>
+						Remember that you're not alone in feeling isolated, and reaching out for support can
+						make a big difference. Whether it's connecting with friends and family virtually,
+						joining a virtual club or group, or talking to a counselor, taking action to improve
+						your social connections can help boost your well-being and sense of belonging
+					</p>
+					<h3>some of the ways to deal with social isolation</h3>
+					<p>
+						Stay connected with friends and family virtually - use video chats, phone calls, or
+						messaging apps to stay in touch.
+					</p>
+					<p>
+						Join virtual clubs or groups that align with your interests, hobbies, or passions. This
+						can be a great way to meet new people and form meaningful connections
+					</p>
+					<p>
+						Take advantage of online resources - there are many resources available online that can
+						help you stay engaged and connected, such as virtual tours, online classes, or webinars.
+					</p>
+					<p>
+						Practice self-care - take time to do things that make you feel good, such as exercise,
+						meditation, or creative hobbies. This can help boost your mood and reduce feelings of
+						isolation.
+					</p>
+					<p>
+						Seek professional help if you're struggling with your mental health. A therapist or
+						counselor can provide you with support and guidance to help you manage your feelings of
+						loneliness and isolation.
+					</p>
+				</div>
+				<div class="button">
+					<a href="/" class="btn" type="button">
+						<span class="btn__text">Home</span>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -96,53 +134,6 @@
 </main>
 
 <style>
-	blockquote0 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #1dd710;
-		padding: 10px;
-		text-align: left;
-		position: relative;
-	}
-	blockquote5 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #3113b6;
-		padding: 10px;
-		text-align: left;
-		position: left;
-	}
-	blockquote4 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #c6530b;
-		padding: 10px;
-		height: 0px;
-		text-align: left;
-		position: relative;
-	}
-	blockquote3 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #78aa0d;
-		padding: 10px;
-		text-align: left;
-	}
-	blockquote2 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #0c8dad;
-		padding: 10px;
-		text-align: left;
-	}
-	blockquote1 {
-		color: rgba(234, 240, 236, 0.85);
-		border-left: 5px solid #e61717;
-		background-color: #bc0d62;
-		padding: 10px;
-		text-align: left;
-	}
-
 	:root {
 		--hue: 223;
 		--bg: hsl(var(--hue), 90%, 90%);
@@ -152,10 +143,10 @@
 	}
 	.content-container {
 		background-size: cover;
-		background-image: linear-gradient(rgba(48, 5, 150, 0.85), rgb(51 83 67 / 85%)),
+		background-image: linear-gradient(rgba(125, 113, 152, 0.85), rgb(51 83 67 / 85%)),
 			url(../therapy.jpg);
 		width: 110%;
-		height: 150vh;
+		height: 200vh;
 	}
 
 	.hero-wrapper {
@@ -167,29 +158,6 @@
 		height: 90vh;
 	}
 
-	nav {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		cursor: pointer;
-		justify-self: unset;
-	}
-
-	.nav-space1 {
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		justify-content: left;
-		padding-top: 500px;
-		padding-left: 20px;
-		padding-right: 20px;
-		font-size: 20px;
-		text-align: center;
-		align-items: flex-start;
-	}
-
 	.hero-wrapper .hero {
 		color: #ffffff;
 	}
@@ -199,29 +167,70 @@
 	}
 	p {
 		font-size: 0.7rem;
-		color: white;
+		color: black;
 		line-height: 1.6;
+		font-weight: 900;
 	}
 	.typewritter {
 		color: goldenrod;
 		padding: 10px;
 		padding-left: 20px;
-		justify-content: space-around;
+		justify-content: center;
+		margin-top: 700px;
 	}
-	.hidden {
-		display: none;
+
+	.quotes {
+		background-color: #989bea;
+		align-items: center;
+		justify-content: left;
+		margin-right: 400px;
+		width: 500px;
+		height: 230px;
+		margin-left: 100px;
+		margin-top: 20px;
+		background-size: cover;
+		background-position: center;
 	}
-	.show-btn {
-		background-color: rgb(85, 146, 85);
-		color: white;
-		font-size: 16px;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		margin-right: 30px;
+
+	.books {
+		justify-content: right;
+		margin-left: 800px;
+		margin-top: -250px;
+		color: rgb(220, 226, 229);
+		background-image: url('{myImage}');
+		width: 400px;
+		background-size: cover;
+		background-position: center;
 	}
-	.show-btn:hover {
-		background-color: darkblue;
+	.one {
+		color: rgb(17, 224, 55);
+	}
+	.button {
+		display: inline-block;
+		padding: 0.7rem 2rem;
+		border: 0.2rem solid rgba(118, 188, 223, 0.85);
+		font-size: 20px;
+		border-radius: 2rem;
+		background-color: rgba(136, 169, 230, 0.85);
+		color: #ffffff;
+		text-decoration: none;
+		margin-top: 0px;
+	}
+
+	.button:hover {
+		color: #ffffff;
+		background-color: rgba(14, 226, 120, 0.85);
+		transition-duration: 0.2s;
+	}
+	.extra {
+		width: 200px;
+		color: blue;
+		font-weight: 500px;
+	}
+	h3 {
+		color: rgb(234, 185, 206);
+	}
+	h2 {
+		color: rgb(49, 44, 39);
 	}
 </style>
