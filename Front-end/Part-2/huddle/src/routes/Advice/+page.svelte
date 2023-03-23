@@ -130,7 +130,6 @@
 						<span class="btn__text">Home</span>
 					</a>
 					</div
-				</div>
 			</div>
 		</section>
 	</div>
