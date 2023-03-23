@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
 	import myImage from '/src/routes/Advice/therapy.jpg';
 	import firstImage from '/src/routes/Advice/first.avif';
 	import secondImage from '/src/routes/Advice/second.avif';
@@ -8,6 +9,32 @@
 	import sixImage from '/src/routes/Advice/first.jpg';
 </script>
 
+=======
+	'use strict';
+
+	const showButton = document.querySelectorAll('.show-btn');
+	const closeButton = document.querySelector('.close-btn');
+	const quotes = document.querySelector('.quotes');
+	const overlay = document.querySelector('.overlay');
+
+	for (let i = 0; i < showButton.length; i++) {
+		showButton[i].addEventListener('click', actionOpen);
+	}
+
+	const actionOpen = function () {
+		quotes.classList.remove('hidden');
+		overlay.classList.remove('hidden');
+	};
+
+	const actionClose = function () {
+		quotes.classList.add('hidden');
+		overlay.classList.add('hidden');
+	};
+
+	closeButton.addEventListener('click', actionClose);
+	overlay.addEventListener('click', actionClose);
+</script>
+>>>>>>> refs/remotes/origin/main
 <main>
 	<div class="content-container" style="background-image: url('{forthImage}')">
 		<section class="hero-wrapper">
@@ -36,6 +63,7 @@
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
 					</div>
+<<<<<<< HEAD
 					<div class="quotes" style="background-image: url('{firstImage}')">
 						<p>"The only way out is through." - Robert Frost</p>
 						<p>"Be the change that you wish to see in the world." - Mahatma Gandhi</p>
@@ -127,6 +155,44 @@
 					<a href="/" class="btn" type="button">
 						<span class="btn__text">Home</span>
 					</a>
+					<div class="button">
+						<button class="show-btn">Quotes</button>
+							<button class="show-btn">Anything</button>
+							<button class="show-btn">Books</button>
+						</div>
+					</div>
+					<div class="quotes hidden">
+						<div class="close-btn">&times;</div>
+						
+					<nav class="nav-space1">
+						<blockquote5>
+							"The only way out is through."
+							<cite>- Robert Frost</cite>
+						</blockquote5><br /><br />
+						<blockquote0>
+							"Be the change that you wish to see in the world."
+							<cite>- Mahatma Gandhi</cite>
+						</blockquote0><br /><br />
+						<blockquote1>
+							"It does not matter how slowly you go as long as you do not stop."
+							<cite>- Confucius</cite>
+						</blockquote1><br />
+						<br />
+						<blockquote4>
+							"Life is 10% what happens to us and 90% how we react to it."
+							<cite>- Charles R. Swindoll</cite>
+						</blockquote4><br /><br />
+						<blockquote2>
+							"We cannot change the cards we are dealt, just how we play the hand."
+							<cite>- Randy Pausch</cite>
+						</blockquote2><br /><br />
+						<blockquote3>
+							"What lies behind us and what lies before us are tiny matters compared to what lies
+							within us."<br /><br />
+							<cite>- Ralph Waldo Emerson</cite>
+						</blockquote3><br />
+					</nav>
+						<div class="overlay hidden"></div>
 				</div>
 			</div>
 		</section>
@@ -232,5 +298,21 @@
 	}
 	h2 {
 		color: rgb(49, 44, 39);
+	}
+	.hidden {
+		display: none;
+	}
+	.show-btn {
+		background-color: rgb(85, 146, 85);
+		color: white;
+		font-size: 16px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-right: 30px;
+	}
+	.show-btn:hover {
+		background-color: darkblue;
 	}
 </style>

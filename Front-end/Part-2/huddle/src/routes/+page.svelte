@@ -96,7 +96,7 @@
 			</div>
 			<div class="nav-space2">
 				<a href="/login">Login</a>
-				<a href="/">Get Started</a>
+				<a href="/getStarted">Get Started</a>
 			</div>
 		</nav>
 		<section class="hero-wrapper">
