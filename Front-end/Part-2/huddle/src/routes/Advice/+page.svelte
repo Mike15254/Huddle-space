@@ -1,7 +1,4 @@
 <script>
-<<<<<<< HEAD
-	'use strict';
-=======
 	import myImage from '/src/routes/Advice/therapy.jpg';
 	import firstImage from '/src/routes/Advice/first.avif';
 	import secondImage from '/src/routes/Advice/second.avif';
@@ -11,9 +8,6 @@
 	import sixImage from '/src/routes/Advice/first.jpg';
 </script>
 
->>>>>>> d219e2942310630037b671d8e84e1303dc2c0c1a
-
-</script>
 <main>
 	<div class="content-container" style="background-image: url('{forthImage}')">
 		<section class="hero-wrapper">
@@ -42,10 +36,6 @@
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
 					</div>
-<<<<<<< HEAD
-
-=======
->>>>>>> d219e2942310630037b671d8e84e1303dc2c0c1a
 					<div class="quotes" style="background-image: url('{firstImage}')">
 						<p>"The only way out is through." - Robert Frost</p>
 						<p>"Be the change that you wish to see in the world." - Mahatma Gandhi</p>
@@ -137,7 +127,7 @@
 					<a href="/" class="btn" type="button">
 						<span class="btn__text">Home</span>
 					</a>
-					</div
+				</div>
 			</div>
 		</section>
 	</div>

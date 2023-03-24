@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"openai": "^3.2.1"
+		"openai": "^3.2.1",
+		"svelte-routing": "^1.6.0"
 	}
 }

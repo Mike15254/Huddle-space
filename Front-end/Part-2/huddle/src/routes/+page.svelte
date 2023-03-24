@@ -106,7 +106,7 @@
 					<div class="typewriter">
 						<h3>You deserve to be happy</h3>
 					</div>
-					<a href="/" class="btn" type="button">
+					<a href="/getStarted" class="btn" type="button">
 						<span class="btn__text">Get Started</span>
 					</a>
 				</div>
