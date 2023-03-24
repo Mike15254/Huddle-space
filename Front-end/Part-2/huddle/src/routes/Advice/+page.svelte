@@ -1,15 +1,4 @@
 <script>
-<<<<<<< HEAD
-	import myImage from '/src/routes/Advice/therapy.jpg';
-	import firstImage from '/src/routes/Advice/first.avif';
-	import secondImage from '/src/routes/Advice/second.avif';
-	import thirdImage from '/src/routes/Advice/third.avif';
-	import forthImage from '/src/routes/Advice/forth.avif';
-	import fifthImage from '/src/routes/Advice/fifth.jpeg';
-	import sixImage from '/src/routes/Advice/first.jpg';
-</script>
-
-=======
 	'use strict';
 
 	const showButton = document.querySelectorAll('.show-btn');
@@ -34,7 +23,6 @@
 	closeButton.addEventListener('click', actionClose);
 	overlay.addEventListener('click', actionClose);
 </script>
->>>>>>> refs/remotes/origin/main
 <main>
 	<div class="content-container" style="background-image: url('{forthImage}')">
 		<section class="hero-wrapper">
@@ -63,7 +51,7 @@
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
 					</div>
-<<<<<<< HEAD
+
 					<div class="quotes" style="background-image: url('{firstImage}')">
 						<p>"The only way out is through." - Robert Frost</p>
 						<p>"Be the change that you wish to see in the world." - Mahatma Gandhi</p>
