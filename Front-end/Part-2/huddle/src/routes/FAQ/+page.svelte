@@ -9,7 +9,7 @@
     line-height: 40px;
     letter-spacing: -0.02em;
     font-weight: 100;
-    background-color: #FFFDD0;
+    background-color: rgba(50, 83, 67, 0.85);
     height: 10vh;
     padding: 30px;
         }
@@ -47,7 +47,7 @@
     <div id="title">
         <h2>Frequently asked questions</h2>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffdd0" fill-opacity="1" d="M0,192L60,192C120,192,240,192,360,160C480,128,600,64,720,64C840,64,960,128,1080,154.7C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(50, 83, 67, 0.85)" fill-opacity="1" d="M0,192L60,192C120,192,240,192,360,160C480,128,600,64,720,64C840,64,960,128,1080,154.7C1200,181,1320,171,1380,165.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     
 	<div class="container">
 		<div class="question">
