@@ -3,20 +3,18 @@
 	// for the loading animation before the from
 	import QuestionareForm from '$lib/components/questionareForm.svelte';
 	import Animate from '$lib/components/loadingAnime.svelte';
-
-	// the form functionality
-	let isSubmitting = false;
-
-	const submitHandler = () => {
-		isSubmitting = true;
-	};
 </script>
 
 <div class="herosection">
 	<img src={img} alt="svg" />
 </div>
 <Animate />
-<QuestionareForm />
+<div>
+	<QuestionareForm />
+</div>
+<div>
+	<a href="/register">Welcome</a>
+</div>
 
 <style>
 	* {

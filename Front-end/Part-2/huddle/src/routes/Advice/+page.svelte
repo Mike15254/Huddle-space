@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<script>
-	import myImage from '/src/routes/Advice/therapy.jpg';
-	import firstImage from '/src/routes/Advice/first.avif';
-	import secondImage from '/src/routes/Advice/second.avif';
-	import thirdImage from '/src/routes/Advice/third.avif';
-	import forthImage from '/src/routes/Advice/forth.avif';
-	import fifthImage from '/src/routes/Advice/fifth.jpeg';
-	import sixImage from '/src/routes/Advice/first.jpg';
-</script>
-
-=======
->>>>>>> 324cb0e0bdf91a3343048923bd1b96cd5ced3299
 <main>
 	<div class="content-container">
 		<section class="hero-wrapper">
@@ -39,11 +26,7 @@
 							not alone, and there are people who care about you and want to help. You've got this!
 						</p>
 					</div>
-<<<<<<< HEAD
-					<div class="quotes" style="background-image: url('{firstImage}')">
-=======
 					<div class="quotes">
->>>>>>> 324cb0e0bdf91a3343048923bd1b96cd5ced3299
 						<p>"The only way out is through." - Robert Frost</p>
 						<p>"Be the change that you wish to see in the world." - Mahatma Gandhi</p>
 						<p>"It does not matter how slowly you go as long as you do not stop." - Confucius</p>
@@ -137,46 +120,6 @@
 						</a>
 					</div>
 				</div>
-<<<<<<< HEAD
-				<div class="social">
-					<h2>Social Isolation</h2>
-					<p>
-						Remember that you're not alone in feeling isolated, and reaching out for support can
-						make a big difference. Whether it's connecting with friends and family virtually,
-						joining a virtual club or group, or talking to a counselor, taking action to improve
-						your social connections can help boost your well-being and sense of belonging
-					</p>
-					<h3>some of the ways to deal with social isolation</h3>
-					<p>
-						Stay connected with friends and family virtually - use video chats, phone calls, or
-						messaging apps to stay in touch.
-					</p>
-					<p>
-						Join virtual clubs or groups that align with your interests, hobbies, or passions. This
-						can be a great way to meet new people and form meaningful connections
-					</p>
-					<p>
-						Take advantage of online resources - there are many resources available online that can
-						help you stay engaged and connected, such as virtual tours, online classes, or webinars.
-					</p>
-					<p>
-						Practice self-care - take time to do things that make you feel good, such as exercise,
-						meditation, or creative hobbies. This can help boost your mood and reduce feelings of
-						isolation.
-					</p>
-					<p>
-						Seek professional help if you're struggling with your mental health. A therapist or
-						counselor can provide you with support and guidance to help you manage your feelings of
-						loneliness and isolation.
-					</p>
-				</div>
-				<div class="button">
-					<a href="/" class="btn" type="button">
-						<span class="btn__text">Home</span>
-					</a>
-				</div>
-=======
->>>>>>> 324cb0e0bdf91a3343048923bd1b96cd5ced3299
 			</div>
 		</section>
 	</div>
