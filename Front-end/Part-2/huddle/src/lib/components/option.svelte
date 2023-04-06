@@ -1,16 +1,17 @@
 <div class="greeting">
-	<h2>Chooce your most comfortable way</h2>
+	<h2>Choose your most comfortable way</h2>
 	<div class="refer">
 		<a href="/video" class="btn1" type="button">
 			<span class="btn__text">Video Call</span>
 			<br />
-			<span class="sppm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sequi.</span>
+			<span class="sppm">You will be able to  use real-time communication 
+				  using video and audio transmission over an internet connection..</span>
 		</a>
 		<a href="/chat" class="btn2" type="button">
 			<span class="btn__text">Chat</span>
 			<br />
 			<span class="sppm"
-				>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, quisquam!</span
+				>You will be able to exchange written messages in real-time over an internet connection</span
 			>
 		</a>
 	</div>
