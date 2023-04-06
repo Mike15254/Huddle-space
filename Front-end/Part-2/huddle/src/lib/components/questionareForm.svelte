@@ -42,7 +42,7 @@
 	{#if questionPointer == -1}
 		<div class="start-screen">
 			<h1>Communicate Your way</h1>
-			<p>Talk to your therapist however you feel comfortable — text, chat or video.</p>
+			<p>Talk to your therapist however you feel comfortable — text/chat or video.</p>
 			<button
 				on:click={() => {
 					questionPointer = 0;

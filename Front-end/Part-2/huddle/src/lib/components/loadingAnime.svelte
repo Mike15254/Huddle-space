@@ -1,7 +1,7 @@
 <script>
 	import Option from './option.svelte'
 	let loading = true;
-	const animationDuration = 200;
+	const animationDuration = 3500;
 
 	setTimeout(() => {
 		loading = false;
@@ -9,7 +9,7 @@
 </script>
 
 <div class="loader" style="display: {loading ? 'block' : 'none'}">
-	<h1>We are mathching you..</h1>
+	<h1>We are matching you..</h1>
 	<span />
 	<span />
 	<span />
