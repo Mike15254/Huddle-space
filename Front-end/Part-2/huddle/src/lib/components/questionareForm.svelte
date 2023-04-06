@@ -41,6 +41,8 @@
 <div class="app">
 	{#if questionPointer == -1}
 		<div class="start-screen">
+			<h1>Communicate Your way</h1>
+			<p>Talk to your therapist however you feel comfortable — text, chat or video.</p>
 			<button
 				on:click={() => {
 					questionPointer = 0;
@@ -96,6 +98,8 @@
 				</div>
 			</div>
 		</div>
+	{:else}
+		<Anime />
 	{/if}
 </div>
 
@@ -112,14 +116,26 @@
 	}
 
 	.app .start-screen {
-		padding-top: 30vh;
+		padding-top: 10vh;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-direction: column;
 	}
+	.app .start-screen h1 {
+		font-size: 30px;
+		padding-left: 17vw;
+		color: #ffffff;
+	}
+	.app .start-screen p {
+		padding-left: 5vw;
+		font-size: 20px;
+		color: #ffffff;
+	}
+
 	.app .start-screen button,
 	.app .score-screen button {
 		padding: 10px 20px;
+		margin-left: 12vw;
+		margin-top: 15vh;
 		height: 100px;
 		width: 500px;
 		background: #41b868;
@@ -132,7 +148,7 @@
 	}
 	.app .start-screen button:hover {
 		background: #31e26c;
-		color: #000000;
+		color: #111;
 		border: 0.2rem solid rgba(33, 189, 176, 0.85);
 		transition-duration: 0.2s;
 	}
@@ -142,11 +158,11 @@
 	}
 
 	.app .quiz-screen {
-		padding: 6vh;
+		padding: 3vh;
 	}
 	.app .quiz-screen .main {
 		padding: 15px;
-		background: rgba(234, 224, 224, 0.25);
+		background: rgba(55, 219, 104, 0.85);
 		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 		backdrop-filter: blur(6px);
 		-webkit-backdrop-filter: blur(6px);
@@ -181,9 +197,9 @@
 	}
 
 	.app .quiz-screen .progress-bar {
-		width: 90%;
+		width: 85%;
 		margin-bottom: 30px;
-		margin-left: 29px;
+		margin-left: 60px;
 		height: 8px;
 		background: #aaa;
 		border-radius: 30px;

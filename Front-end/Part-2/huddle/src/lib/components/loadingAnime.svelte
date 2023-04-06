@@ -1,6 +1,7 @@
 <script>
+	import Option from './option.svelte'
 	let loading = true;
-	const animationDuration = 3000;
+	const animationDuration = 200;
 
 	setTimeout(() => {
 		loading = false;
@@ -8,34 +9,34 @@
 </script>
 
 <div class="loader" style="display: {loading ? 'block' : 'none'}">
-	<h1>Loading</h1>
+	<h1>We are mathching you..</h1>
 	<span />
 	<span />
 	<span />
 </div>
 <div class="greeting" style="display: {loading ? 'none' : 'block'}">
-	
+	<Option/>
 </div>
 
 <style>
-    :root {
+	:root {
 		--line-border-fill: #18b997;
 		--line-border-empty: #bdbdbd;
 	}
 	.loader {
-		margin: 200px auto;
+		margin: 100px auto;
 	}
 	h1 {
 		font-family: 'Actor', sans-serif;
 		color: #000000;
-		font-size: 16px;
+		font-size: 30px;
 		letter-spacing: 1px;
 		font-weight: 200;
 		text-align: center;
 	}
 	.loader span {
-		width: 16px;
-		height: 16px;
+		width: 25px;
+		height: 25px;
 		border-radius: 50%;
 		display: inline-block;
 		position: absolute;
@@ -86,7 +87,11 @@
 	}
 
 	h1 {
-		color: #212121;
+		color: #ffffff;
 		margin-bottom: 90px;
 	}
+	.greeting {
+		padding: 20px;
+	}
+	
 </style>
