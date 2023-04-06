@@ -8,28 +8,28 @@
 
 	let questions = [
 		{
-			question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tenetur.',
-			options: [' consectetur', 'pipeline', 'hyphen', 'nderscore'],
+			question: 'How often do you feel overwhelmed by your workload/ academic performance?',
+			options: [' Rarely', 'Sometimes', 'Often', 'Almost always'],
 			correctIndex: 3
 		},
 		{
-			question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tenetur.',
-			options: [' consectetur', ' consectetur', ' consectetur', ' consectetur'],
+			question: 'Have you experienced any major life changes recently?',
+			options: [' Rarely', 'Sometimes', 'Often', 'Almost always'],
 			correctIndex: 3
 		},
 		{
-			question: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tenetur.',
-			options: ['memory', 'libh', 'string', 'dosh'],
+			question: ' How often do you feel homesick or miss your family/friends?',
+			options: [' Rarely', 'Sometimes', 'Often', 'Almost always'],
 			correctIndex: 1
 		},
 		{
-			question: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tenetur.',
-			options: [' consectetur', 'operator', ' consectetur', 'operator'],
+			question: ' How often do you feel stressed about your financial situation?',
+			options: ['Rarely', 'Sometimes', 'Often', 'Almost always'],
 			correctIndex: 1
 		},
 		{
-			question: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tenetur.',
-			options: ['dealloc', ' consectetur', 'free', ' consectetur'],
+			question: ' How often do you feel overwhelmed by social situations or social anxiety?',
+			options: ['Rarely', 'Sometimes', 'Often', 'Almost always'],
 			correctIndex: 2
 		}
 	];
