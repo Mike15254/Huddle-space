@@ -20,7 +20,7 @@
 				<div class="description">
 					<h3>Dennis Muriuki</h3>
 					<p>
-						Dennis is a full stack developer. Alex does JavaScript development for CodePen, both front
+						Dennis is a full stack developer. He does JavaScript development for CodePen, both front
 						end and back, and just about everything else.<br /><a href="/">@theflakes</a>
 					</p>
 				</div>
@@ -32,7 +32,7 @@
 				<div class="description">
 					<h3>Edina Kwamboka</h3>
 					<p>
-						Edina wears a lot of hats. She is our documentation lead, customer support maestra,
+						Edina wears a lot of hats. She is our documentation lead, customer support,
 						editor, and community manager.<br /><a href="/">@kwambox</a>
 					</p>
 				</div>
@@ -44,7 +44,7 @@
 				<div class="description">
 					<h3>Ephantus Ng'ang'a</h3>
 					<p>
-						Ephantus is a designer/developer residing in Houston. He likes to build animations with
+						Ephantus is a designer/developer. He likes to build animations with
 						CSS & JavaScript.<br /><a href="/">@emergin</a>
 					</p>
 				</div>
@@ -56,7 +56,7 @@
 				<div class="description">
 					<h3>Maureen Rita</h3>
 					<p>
-						Rita is a full stack'er in Australia. Not only a creative and talented designer and
+						Rita is a full stack'er. Not only a creative and talented designer and
 						developer, but a great technical writer.<br /><a href="/">@rita</a>
 					</p>
 				</div>
