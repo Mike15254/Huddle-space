@@ -1,3 +1,25 @@
 node_modules
 pnpm-lock.yaml
 packge-lock.json
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting to Google Meet</title>
+    <meta http-equiv="refresh" content="5;URL='https://meet.google.com/'" />
+    <style>
+      p{
+        
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      body{
+        background-color:rgb(43, 63, 43);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Redirecting to Google Meet in a few ...</p>
+  </body>
+</html>

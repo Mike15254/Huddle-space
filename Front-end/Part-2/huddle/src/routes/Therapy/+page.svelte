@@ -8,22 +8,22 @@
 		{
 			id: 1,
 			url: img1,
-			description: 'A new way to learn'
+			description: 'Dr. Mohammed Ali, Licensed Clinical Social Worker. He is a licensed therapist with over 15 years of experience working with university students.'
 		},
 		{
 			id: 2,
 			url: img2,
-			description: 'A cute cat'
+			description: 'Dr. David Lee, Group Therapy Facilitator and Wellness Coach: Dr. Lee is a licensed clinical psychologist who specializes in group therapy, wellness coaching, and positive psychology.'
 		},
 		{
 			id: 3,
 			url: img3,
-			description: 'A delicious pizza'
+			description: 'Dr. Rachel Chen, EMDR Trained and Mindfulness-Based Therapist: Dr. Chen is a licensed psychologist with a focus on trauma recovery and mindfulness-based interventions.'
 		},
 		{
 			id: 4,
 			url: img4,
-			description: 'A delicious pizza'
+			description: 'Sarah Johnson She is known for her compassionate and engaging approach, as well as her commitment to helping students reach their full potential.'
 		}
 	];
 
@@ -56,9 +56,12 @@
 		width: 40vw;
 		height: 50vh;
 		border: 0.1rem solid rgba(50, 83, 67, 0.85);
+		background-color: rgb(31, 63, 38);
 	}
 	.sty-img img {
 		border: 0.1rem solid rgba(50, 83, 67, 0.85);
 	}
+	
+	
 
 </style>
