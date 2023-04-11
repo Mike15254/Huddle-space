@@ -8,7 +8,7 @@
 		{
 			id: 1,
 			url: img1,
-			description: 'A beautiful landscape'
+			description: 'A new way to learn'
 		},
 		{
 			id: 2,

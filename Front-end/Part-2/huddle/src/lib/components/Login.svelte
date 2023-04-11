@@ -3,6 +3,7 @@
 
 	let username;
 	let password;
+	let passwordConfirm;
 
 	async function Login() {
 		await pb.collection('users').authWithPassword(username, password);
@@ -37,7 +38,9 @@
 {:else}
 	<form on:submit|preventDefault>
 		<input placeholder="Username" type="text" bind:value={username} />
+		<input placeholder="email" type="email">
 		<input placeholder="Password" type="password" bind:value={password} />
+		<input placeholder="Confirm Password" type="password" bind:value={passwordConfirm} />
 		<div class="container">
 			<button on:click={signUp}>Sign Up</button>
 			<button on:click={Login}>Login</button>

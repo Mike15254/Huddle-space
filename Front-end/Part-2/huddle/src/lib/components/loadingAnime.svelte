@@ -1,7 +1,7 @@
 <script>
 	import Option from './option.svelte'
 	let loading = true;
-	const animationDuration = 200;
+	const animationDuration = 3500;
 
 	setTimeout(() => {
 		loading = false;
